@@ -1,0 +1,111 @@
+#apt stuff
+alias update="sudo apt-get  update"
+alias upgrade="sudo apt-get upgrade -y"
+alias install="sudo apt-get install"
+alias remove="sudo apt-get remove"
+alias search="apt-cache search"
+
+# Shortcuts
+#alias rm='rm -i'
+alias rmi='rm -i'
+#alias mv='mv -i'
+alias h='history | tail'
+alias hg='history | grep '
+alias ch='chmod 755 '
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias ']'='open'
+alias ll='ls -alF'
+alias la='ls -A'
+alias lla='ls -lA'
+alias l='ls -CF'
+alias vi='vim'
+alias cls="clear"
+alias c="clear"
+alias dud='du -scm *|sort -n'
+
+# alias mkdir and cd
+function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+function cdl () { cd "$@" && ls; }
+
+# reload zshrc
+alias zshr='. ~/.zshrc'
+
+# PHP stuff
+alias composer="composer.phar"
+
+
+# Apache
+alias arestart="sudo /etc/init.d/apache2 restart"
+alias astart="sudo /etc/init.d/apache2 start"
+alias astop="sudo /etc/init.d/apache2 stop"
+
+
+
+# Try to extract everything
+extract() {
+    if [ -f "$1" ] ; then
+        case "$1" in
+            *.tar.bz2)   tar xvjf "$1"  ;;
+            *.tar.gz)    tar xvzf "$1"  ;;
+            *.bz2)       bunzip2 "$1"   ;;
+            *.rar)       unrar x "$1"   ;;
+            *.gz)        gunzip "$1"    ;;
+            *.tar)       tar xvf "$1"   ;;
+            *.tbz2)      tar xvjf "$1"  ;;
+            *.tgz)       tar xvzf "$1"  ;;
+            *.zip)       unzip "$1"     ;;
+            *.Z)         uncompress "$1";;
+            *.7z)        7z x "$1"      ;;
+            *)           echo "'$1' cannot be extracted via >extract<" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
+
+# Edit various configs
+conf() {
+    case $1 in
+    zshrc)     vim ~/.zshrc ;;
+    xinit)     vim ~/.xinitrc ;;
+    xres)      vim ~/.Xresources && xrdb ~/.Xresources ;;
+    sxhkd)     vim ~/.config/sxhkd/sxhkdrc ;;
+        ncmpcpp)   vim ~/.ncmpcpp/config ;;
+        ranger)    vim ~/.config/ranger/rc.conf ;;
+    tmux)      vim ~/.tmux.conf ;;
+    screenfo)  vim ~/.screenfo.conf ;;
+    vimrc)     vim ~/.vimrc ;;
+    swm)       vim ~/Projects/swm/config.h ;;
+    php)	   sudo vim /etc/php5/apache2/php.ini ;;
+    apache)	   suco vim /etc/apache2/apache2.conf ;;
+        *)			echo "Unknown application: $1" ;;
+    esac
+}
+
+
+#  Colored Man Pages #
+man() {
+env \
+    LESS_TERMCAP_mb=$(printf "\e[38;5;146m") \
+    LESS_TERMCAP_md=$(printf "\e[38;5;3m")   \
+    LESS_TERMCAP_me=$(printf "\e[38;5;138m") \
+    LESS_TERMCAP_se=$(printf "\e[38;5;246m") \
+    LESS_TERMCAP_so=$(printf "\e[38;5;146m") \
+    LESS_TERMCAP_ue=$(printf "\e[38;5;246m") \
+    LESS_TERMCAP_us=$(printf "\e[38;5;174m") \
+man "$@"
+}
+
+function rm {
+  echo $@ | grep -P '\W?-rf\b'
+  if [[ $? != 0 ]];then
+    mv -f $* /tmp
+  else
+    arg=$(echo $@ | sed 's/-rf\?\s*//')
+    sudo rm -rfi $arg
+  fi
+}
