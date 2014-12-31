@@ -1,9 +1,0 @@
-[submodule ".dotbot"]
-	path = .dotbot
-	url = git@github.com:anishathalye/dotbot.git
-[submodule "myVIM"]
-	path = myVIM
-	url = git@github.com:jprice/myVIM.git
-[submodule "dotsync"]
-	path = dotsync
-	url = git@github.com:dotphiles/dotsync.git
