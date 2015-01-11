@@ -36,7 +36,6 @@ mutt/certificates
 task/task/*.data
 dotsyncrc
 bin/scripts
-fonts/Pragmata* #Sorry I had to pay for them and so do you
 crap/*
 private/*
 vim/viminfo
@@ -52,3 +51,12 @@ conky/info.conkyrc
 conky/sys.conkyrc
 conky/network.conkyrc
 conky/weather.conkyrc
+
+
+#Sorry I had to pay for them and so do you
+fonts/Pragmatat*
+fonts/PragmataPro-B.ttf
+fonts/PragmataPro-I.ttf
+fonts/PragmataPro-Z.ttf
+fonts/PragmataPro.tar.gz
+fonts/PragmataPro.ttf
