@@ -40,7 +40,7 @@ sudo make install
 Credits
 -------------
 [Conky](https://github.com/alexbel/conky)
-
+If I "stole" something from you and left you out please open an issue.
 
 License
 -------
