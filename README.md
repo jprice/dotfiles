@@ -1,5 +1,6 @@
-My dotfiles based from [Dotfiles][1] see that repo for more info.
-=========
+My dotfiles 
+========
+Based from [Dotfiles][1] see that repo for more info.
 
 Installation
 ------------
