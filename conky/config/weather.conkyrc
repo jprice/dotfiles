@@ -1,0 +1,18 @@
+# Gap, in pixels, between right or left border of screen, same as passing -x(-y) at command line
+gap_x 1150
+gap_y 300
+
+# Minimum size of text area
+minimum_size 320 400
+maximum_width 320
+
+# Update interval in seconds
+update_interval 600
+temperature_unit fahrenheit
+
+# stuff after 'TEXT' will be formatted on screen
+TEXT
+${color0}Gmail: ${hr 2}
+$color${goto 20}${execpi 1800 ruby ~/.dotfiles/conky/scripts/gmail.rb} new emails
+
+${execpi 900 ruby ~/.dotfiles/conky/scripts/weather.rb}

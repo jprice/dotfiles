@@ -1,0 +1,19 @@
+# Gap, in pixels, between right or left border of screen, same as passing -x(-y) at command line
+gap_x 7
+gap_y 0
+
+# Minimum size of text area
+minimum_size 300 0
+maximum_width 350
+
+# Update interval in seconds
+update_interval 30
+temperature_unit fahrenheit
+
+# stuff after 'TEXT' will be formatted on screen
+TEXT
+${color0}Kernel: $color$kernel
+${color0}OS: ${color}${pre_exec cat /etc/issue.net} $machine
+${color0}Uptime: $color$uptime
+${color0}Time local: ${color grey60}${execi 30 date +"%I:%M"}
+${color0}Load: $color$loadavg

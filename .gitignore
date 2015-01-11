@@ -46,3 +46,9 @@ vim/*~
 vim/.netrwhist
 vim/beautify.settings
 vim/bundle/*
+
+conky/secrets.yml
+conky/info.conkyrc
+conky/sys.conkyrc
+conky/network.conkyrc
+conky/weather.conkyrc
