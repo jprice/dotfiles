@@ -1,6 +1,6 @@
 My dotfiles 
 ========
-Based from [Dotfiles][1] see that repo for more info.
+Based from [Dotphiles][1] see that repo for more info.
 
 Installation
 ------------
@@ -43,6 +43,9 @@ Credits
 *[Conky](https://github.com/alexbel/conky)
 *If I "stole" something from you and left you out please open an issue.
 
+Contribute
+------------
+Feel free to fork and send Pull Requests.
 
 License
 -------
