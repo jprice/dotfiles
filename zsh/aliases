@@ -1,13 +1,20 @@
 #apt stuff
+alias apt-get="sudo apt-get"
 alias update="sudo apt-get  update"
 alias upgrade="sudo apt-get upgrade -y"
 alias install="sudo apt-get install"
 alias remove="sudo apt-get remove"
 alias search="apt-cache search"
 
+#ansible
+alias ansible="sudo ansible"
+alias ansible-playbook="sudo ansible-playbook"
+alias ansible-galaxy="sudo ansible-galaxy"
+alias ansible-vault="sudo ansible-vault"
+
 # Shortcuts
 #alias rm='rm -i'
-alias rmi='rm -i'
+#alias rmi='rm -i'
 #alias mv='mv -i'
 alias h='history | tail'
 alias hg='history | grep '
@@ -100,12 +107,12 @@ env \
 man "$@"
 }
 
-function rm {
-  echo $@ | grep -P '\W?-rf\b'
-  if [[ $? != 0 ]];then
-    mv -f $* /tmp
-  else
-    arg=$(echo $@ | sed 's/-rf\?\s*//')
-    sudo rm -rfi $arg
-  fi
-}
+#function rm {
+#  echo $@ | grep -P '\W?-rf\b'
+#  if [[ $? != 0 ]];then
+#    mv -f $* /tmp
+#  else
+#    arg=$(echo $@ | sed 's/-rf\?\s*//')
+#    sudo rm -rfi $arg
+#  fi
+#}
