@@ -5,6 +5,9 @@
 #
 *.bak
 *.swp
+*.bak
+*.priv
+*.private
 .DS_Store
 *.d/localhost
 aptitude/cache
@@ -51,6 +54,8 @@ conky/info.conkyrc
 conky/sys.conkyrc
 conky/network.conkyrc
 conky/weather.conkyrc
+
+zsh/custom/private/*
 
 
 #Sorry I had to pay for them and so do you

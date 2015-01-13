@@ -1,16 +1,18 @@
-#apt stuff
-alias apt-get="sudo apt-get"
-alias update="sudo apt-get  update"
-alias upgrade="sudo apt-get upgrade -y"
-alias install="sudo apt-get install"
-alias remove="sudo apt-get remove"
-alias search="apt-cache search"
+# apt stuff #depericated, using oh-my-zsh debian plugin.
+#alias apt-get="sudo apt-get"
+#alias update="sudo apt-get  update"
+#alias upgrade="sudo apt-get upgrade -y"
+#alias install="sudo apt-get install"
+#alias remove="sudo apt-get remove"
+#alias search="apt-cache search"
+##############################################
 
 #ansible
 alias ansible="sudo ansible"
 alias ansible-playbook="sudo ansible-playbook"
 alias ansible-galaxy="sudo ansible-galaxy"
 alias ansible-vault="sudo ansible-vault"
+##############################################
 
 # Shortcuts
 #alias rm='rm -i'
@@ -19,24 +21,51 @@ alias ansible-vault="sudo ansible-vault"
 alias h='history | tail'
 alias hg='history | grep '
 alias ch='chmod 755 '
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-alias ......='cd ../../../../..'
-alias ']'='open'
+#alias ..='cd ..'
+#alias ...='cd ../..'
+#alias ....='cd ../../..'
+#alias .....='cd ../../../..'
+#alias ......='cd ../../../../..'
+#alias ']'='open'
 alias ll='ls -alF'
 alias la='ls -A'
 alias lla='ls -lA'
 alias l='ls -CF'
-alias vi='vim'
 alias cls="clear"
 alias c="clear"
 alias dud='du -scm *|sort -n'
-
-# alias mkdir and cd
+# mkdir and cd
 function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 function cdl () { cd "$@" && ls; }
+
+##############################################
+
+# VIM
+alias vi=vim
+alias svi='sudo vi'
+alias vis='vim "+set si"'
+alias edit='vim'
+##############################################
+
+
+# up instead of cd../..
+# From /u/beardedlinuxgeek
+up(){
+    local d=""
+    limit=$1
+    for ((i=1 ; i <= limit ; i++))
+            do
+                    d=$d/..
+            done
+    d=$(echo $d | sed 's/^\///')
+    if [ -z "$d" ]; then
+            d=..
+    fi
+    cd $d
+}
+##############################################
+
+
 
 # reload zshrc
 alias zshr='. ~/.zshrc'
@@ -49,7 +78,7 @@ alias zshr='. ~/.zshrc'
 alias arestart="sudo /etc/init.d/apache2 restart"
 alias astart="sudo /etc/init.d/apache2 start"
 alias astop="sudo /etc/init.d/apache2 stop"
-
+##############################################
 
 
 # Try to extract everything
@@ -73,8 +102,9 @@ extract() {
         echo "'$1' is not a valid file"
     fi
 }
+##############################################
 
-# Edit various configs
+# edit various confs
 conf() {
     case $1 in
     zshrc)     vim ~/.zshrc ;;
@@ -92,7 +122,7 @@ conf() {
         *)			echo "Unknown application: $1" ;;
     esac
 }
-
+##############################################
 
 #  Colored Man Pages #
 man() {
@@ -106,6 +136,7 @@ env \
     LESS_TERMCAP_us=$(printf "\e[38;5;174m") \
 man "$@"
 }
+##############################################
 
 #function rm {
 #  echo $@ | grep -P '\W?-rf\b'
@@ -116,3 +147,7 @@ man "$@"
 #    sudo rm -rfi $arg
 #  fi
 #}
+##############################################
+
+# https://transfer.sh/
+alias transfer=transfer 
