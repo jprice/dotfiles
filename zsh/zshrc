@@ -1,11 +1,11 @@
 ##############################################
 # oh-my-zsh config
 export ZSH=$HOME/.oh-my-zsh
-ZSH_CUSTOM=#HOME/custom
+ZSH_CUSTOM=#HOME/.dotfiles/zsh/custom
 ZSH_THEME="jprice"
 DISABLE_AUTO_UPDATE="true"
 HIST_STAMPS="mm/dd/yyyy"
-plugins=(git sublime debian docker gem git-extras laravel laravel4 python pyenv php pip rsync tmux virtualenv adb django)
+plugins=(debian git sublime docker gem git-extras laravel laravel4 python pyenv php pip rsync tmux virtualenv adb django)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 ##############################################

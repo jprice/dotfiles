@@ -1,4 +1,15 @@
-# apt stuff #depericated, using oh-my-zsh debian plugin.
+############################################## 
+#
+# My custom aliases to save me some 
+# keystrokes.
+# I wouldn't suggest using these. I would
+# customize my own, but I'm not you.
+#
+##############################################
+
+##############################################
+# apt stuff 
+# depericated, using oh-my-zsh debian plugin.
 #alias apt-get="sudo apt-get"
 #alias update="sudo apt-get  update"
 #alias upgrade="sudo apt-get upgrade -y"
@@ -7,13 +18,15 @@
 #alias search="apt-cache search"
 ##############################################
 
+##############################################
 #ansible
-alias ansible="sudo ansible"
-alias ansible-playbook="sudo ansible-playbook"
-alias ansible-galaxy="sudo ansible-galaxy"
-alias ansible-vault="sudo ansible-vault"
+#alias ansible="sudo ansible"
+#alias ansible-playbook="sudo ansible-playbook"
+#alias ansible-galaxy="sudo ansible-galaxy"
+#alias ansible-vault="sudo ansible-vault"
 ##############################################
 
+##############################################
 # Shortcuts
 #alias rm='rm -i'
 #alias rmi='rm -i'
@@ -34,22 +47,26 @@ alias l='ls -CF'
 alias cls="clear"
 alias c="clear"
 alias dud='du -scm *|sort -n'
-# mkdir and cd
-function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
-function cdl () { cd "$@" && ls; }
-
-##############################################
-
-# VIM
+mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+alias zshr='. ~/.zshrc'
 alias vi=vim
 alias svi='sudo vi'
 alias vis='vim "+set si"'
 alias edit='vim'
+alias root='sudo -i'
+alias su='sudo -i'
+alias sudo='sudo '
+alias reboot='sudo /sbin/reboot'
+alias shutdown='sudo /sbin/shutdown'
+alias wget='wget -c'
+alias ax="chmod a+x"
+alias foldersize="find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn"
+
 ##############################################
 
 
 # up instead of cd../..
-# From /u/beardedlinuxgeek
+# From http://serverfault.com/questions/3743/what-useful-things-can-one-add-to-ones-bashrc
 up(){
     local d=""
     limit=$1
@@ -65,22 +82,23 @@ up(){
 }
 ##############################################
 
-
-
-# reload zshrc
-alias zshr='. ~/.zshrc'
-
-# PHP stuff
-#alias composer="composer.phar"
-
-
+##############################################
+# LAMP
 # Apache
 alias arestart="sudo /etc/init.d/apache2 restart"
 alias astart="sudo /etc/init.d/apache2 start"
 alias astop="sudo /etc/init.d/apache2 stop"
+# PHP stuff
+#alias composer="composer.phar"
+alias nginxreload='sudo /usr/local/nginx/sbin/nginx -s reload'
+alias nginxtest='sudo /usr/local/nginx/sbin/nginx -t'
+alias lightyload='sudo /etc/init.d/lighttpd reload'
+alias lightytest='sudo /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf -t'
+alias httpdreload='sudo /usr/sbin/apachectl -k graceful'
+alias httpdtest='sudo /usr/sbin/apachectl -t && /usr/sbin/apachectl -t -D DUMP_VHOSTS'
 ##############################################
 
-
+##############################################
 # Try to extract everything
 extract() {
     if [ -f "$1" ] ; then
@@ -104,6 +122,7 @@ extract() {
 }
 ##############################################
 
+##############################################
 # edit various confs
 conf() {
     case $1 in
@@ -124,6 +143,7 @@ conf() {
 }
 ##############################################
 
+##############################################
 #  Colored Man Pages #
 man() {
 env \
@@ -138,6 +158,7 @@ man "$@"
 }
 ##############################################
 
+##############################################
 #function rm {
 #  echo $@ | grep -P '\W?-rf\b'
 #  if [[ $? != 0 ]];then
@@ -151,3 +172,22 @@ man "$@"
 
 # https://transfer.sh/
 alias transfer=transfer 
+
+##############################################
+# network stuff
+alias ping='ping -c 5'
+alias fastping='ping -c 100 -s.2'
+alias ports='netstat -tulanp'
+alias ip="curl icanhazip.com"
+alias p4='ping 4.2.2.2 -c 4'
+##############################################
+
+##############################################
+# iptables
+alias ipt='sudo /sbin/iptables'
+alias iptlist='sudo /sbin/iptables -L -n -v --line-numbers'
+alias iptlistin='sudo /sbin/iptables -L INPUT -n -v --line-numbers'
+alias iptlistout='sudo /sbin/iptables -L OUTPUT -n -v --line-numbers'
+alias iptlistfw='sudo /sbin/iptables -L FORWARD -n -v --line-numbers'
+alias firewall=iptlist
+##############################################
