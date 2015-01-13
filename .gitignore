@@ -9,6 +9,16 @@
 *.priv
 *.private
 .DS_Store
+*.pem
+*.key
+*.cert
+*.exe
+*.out
+*.app
+*.lib
+*.a
+.virthualenv
+*~
 *.d/localhost
 aptitude/cache
 cmus/autosave
@@ -19,8 +29,7 @@ ssh/id*
 ssh/environment*
 ssh/known_hosts
 ssh/master/*
-ssh/new*
-ssh/*.pub
+ssh/authorized_keys
 subversion/README.txt
 subversion/auth/*
 gnupg/secring.gpg

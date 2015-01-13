@@ -9,13 +9,14 @@
 
 ##############################################
 # apt stuff 
-# depericated, using oh-my-zsh debian plugin.
-#alias apt-get="sudo apt-get"
-#alias update="sudo apt-get  update"
-#alias upgrade="sudo apt-get upgrade -y"
-#alias install="sudo apt-get install"
-#alias remove="sudo apt-get remove"
-#alias search="apt-cache search"
+if [ $UID -ne 0 ]; then
+alias update="sudo apt-get  update"
+alias upgrade="sudo apt-get upgrade -y"
+alias install="sudo apt-get install"
+alias remove="sudo apt-get remove"
+alias search="apt-cache search"
+alias apt-get="sudo apt-get"
+fi
 ##############################################
 
 ##############################################
