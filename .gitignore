@@ -25,11 +25,7 @@ cmus/autosave
 cmus/cache
 cmus/*-history
 cmus/*.pl
-ssh/id*
-ssh/environment*
-ssh/known_hosts
-ssh/master/*
-ssh/authorized_keys
+ssh/*
 subversion/README.txt
 subversion/auth/*
 gnupg/secring.gpg
