@@ -62,7 +62,8 @@ alias shutdown='sudo /sbin/shutdown'
 alias wget='wget -c'
 alias ax="chmod a+x"
 alias foldersize="find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn"
-lias pkill="sudo pkill"
+alias pkill="sudo pkill"
+alias bfg="~/bin/bfg.jar"
 ##############################################
 
 
