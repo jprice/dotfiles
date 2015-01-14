@@ -33,15 +33,15 @@ color index      cyan          default "~u"
 #color index default         default   "~N !~T !~F !~p !~P"
 
 color index         brightblack		default		"~A"                        # all messages
-color index         color166		default		"~E"                        # expired messages
+color index         white		default		"~E"                        # expired messages
 color index         white		default		"~N"                        # new messages
 color index         white		default		"~O"                        # old messages
-color index         color61		default		"~Q"                        # messages that have been replied to
+color index         red		default		"~Q"                        # messages that have been replied to
 color index         brightblack		default		"~R"                        # read messages
 color index         white		default		"~U"                        # unread messages
 color index         white		default		"~U~$"                      # unread, unreferenced messages
-color index         color241		default		"~v"                        # messages part of a collapsed thread
-color index         color241		default		"~P"                        # messages from me
+color index         white		default		"~v"                        # messages part of a collapsed thread
+color index         blue		default		"~P"                        # messages from me
 color index         white		default		"~p!~F"                     # messages to me
 color index         white		default		"~N~p!~F"                   # new messages to me
 color index         white		default		"~U~p!~F"                   # unread messages to me
@@ -51,10 +51,10 @@ color index         brightblack		default		"~F~p"                      # flagged 
 color index         brightblack		default		"~N~F"                      # new flagged messages
 color index         brightblack		default		"~N~F~p"                    # new flagged messages to me
 color index         brightblack		default		"~U~F~p"                    # new flagged messages to me
-color index         color235		red		"~D"                        # deleted messages
-color index         color245		default		"~v~(!~N)"                  # collapsed thread with no unread
-color index         color136		default		"~v~(~N)"                   # collapsed thread with some unread
-color index         color64		default		"~N~v~(~N)"                 # collapsed thread with unread parent
+color index         red		red		"~D"                        # deleted messages
+color index         white		default		"~v~(!~N)"                  # collapsed thread with no unread
+color index         white		default		"~v~(~N)"                   # collapsed thread with some unread
+color index         white		default		"~N~v~(~N)"                 # collapsed thread with unread parent
 
 # set up the headers
 color header     brightmagenta default "^from:"
@@ -87,7 +87,7 @@ color body       brightmagenta default "(^| )+(|[<>|])[8;:](|[^ ])[)(/|DOPS]( |$
 color body       brightmagenta default "(^| )+[)(/|DOPS](|[^ ])[8;:](|[<>|])( |$)+"
 
 # *bold*, _underline_, and /italic/
-color body       brightcyan    default "(^| )\\*[^ ]+\\*( |$)"
+#color body       brightcyan    default "(^| )\\*[^ ]+\\*( |$)"
 color body       brightcyan    default "(^| )_[^ ]+_( |$)"
 color body       brightcyan    default "(^| )/[^ ]+/( |$)"
 
