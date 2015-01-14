@@ -1,6 +1,6 @@
-My dotfiles 
+Dotfiles 
 ========
-Based from [Dotphiles][1] see that repo for more info.
+Based off [Dotphiles][1] see that repo for more info.
 
 Installation
 ------------
