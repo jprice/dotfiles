@@ -1,6 +1,6 @@
 Dotfiles 
 ========
-Based off [Dotphiles][1] see that repo for more info.
+Based off [Dotphiles][1] see that repo for more info. I soon plan to switch to using Ansible to manage them. Maybe.
 
 Installation
 ------------
