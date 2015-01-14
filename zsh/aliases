@@ -62,7 +62,7 @@ alias shutdown='sudo /sbin/shutdown'
 alias wget='wget -c'
 alias ax="chmod a+x"
 alias foldersize="find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn"
-
+lias pkill="sudo pkill"
 ##############################################
 
 
@@ -131,14 +131,14 @@ conf() {
     xinit)     vim ~/.xinitrc ;;
     xres)      vim ~/.Xresources && xrdb ~/.Xresources ;;
     sxhkd)     vim ~/.config/sxhkd/sxhkdrc ;;
-        ncmpcpp)   vim ~/.ncmpcpp/config ;;
-        ranger)    vim ~/.config/ranger/rc.conf ;;
+    ncmpcpp)   vim ~/.ncmpcpp/config ;;
+    ranger)    vim ~/.config/ranger/rc.conf ;;
     tmux)      vim ~/.tmux.conf ;;
-    screenfo)  vim ~/.screenfo.conf ;;
     vimrc)     vim ~/.vimrc ;;
-    swm)       vim ~/Projects/swm/config.h ;;
+    ranger)     vim ~/.config/ranger/rc.conf ;;
     php)	   sudo vim /etc/php5/apache2/php.ini ;;
     apache)	   suco vim /etc/apache2/apache2.conf ;;
+    mpd)        vim ~/.mpdconf ;;
         *)			echo "Unknown application: $1" ;;
     esac
 }
