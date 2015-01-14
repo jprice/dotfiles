@@ -37,6 +37,7 @@ gnupg/random*
 gnupg/private*
 gnupg/*~
 mercurial/certs/
+mutt/muttrc
 mutt/cache/*
 mutt/mailboxes.*
 mutt/smime/*
@@ -70,3 +71,5 @@ fonts/PragmataPro-I.ttf
 fonts/PragmataPro-Z.ttf
 fonts/PragmataPro.tar.gz
 fonts/PragmataPro.ttf
+
+*.sublime-*

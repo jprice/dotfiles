@@ -19,6 +19,7 @@ Any existing ~/.dotfiles will be backed up into `~/.backup/dotfiles/` if found
 Oh-My-ZSH Theme Fix
 -------------
 This is only required if you use the trapd00r theme. Otherwise skip.
+
 The them I use requires some extra steps in order to work. Just follow the following:
 
 
