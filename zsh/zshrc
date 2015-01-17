@@ -60,3 +60,7 @@ transfer() {
 	cat $tmpfile; 
 	rm -f $tmpfile; }; 
 ##############################################
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
+PATH=$PATH:~/.node_modules/bin
+export npm_config_prefix=~/.node_modules

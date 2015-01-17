@@ -20,6 +20,12 @@ fi
 ##############################################
 
 ##############################################
+# pacman
+alias pacman="sudo pacman"
+
+##############################################
+
+##############################################
 #ansible
 #alias ansible="sudo ansible"
 #alias ansible-playbook="sudo ansible-playbook"
@@ -98,6 +104,12 @@ alias lightyload='sudo /etc/init.d/lighttpd reload'
 alias lightytest='sudo /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf -t'
 alias httpdreload='sudo /usr/sbin/apachectl -k graceful'
 alias httpdtest='sudo /usr/sbin/apachectl -t && /usr/sbin/apachectl -t -D DUMP_VHOSTS'
+##############################################
+
+##############################################
+# Other programming 
+alias pip install='sudo pip install'
+alias gem install='sudo gem install'
 ##############################################
 
 ##############################################
