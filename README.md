@@ -1,3 +1,10 @@
+    .___      __    _____.__.__                 
+  __| _/_____/  |__/ ____\__|  |   ____   ______
+ / __ |/  _ \   __\   __\|  |  | _/ __ \ /  ___/
+/ /_/ (  <_> )  |  |  |  |  |  |_\  ___/ \___ \ 
+\____ |\____/|__|  |__|  |__|____/\___  >____  >
+     \/                               \/     \/ 
+
 Dotfiles 
 ========
 Based off [Dotphiles][1] see that repo for more info. I soon plan to switch to using Ansible to manage them. Maybe.

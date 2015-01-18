@@ -8,7 +8,14 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(git sublime docker gem git-extras laravel laravel4 python pyenv php pip rsync tmux virtualenv adb django)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
-export LANG=en_DK.UTF-8
+##############################################
+
+
+##############################################
+# locale crap
+export LANG=en_US.UTF-8
+export LC_MESSAGE="C"
+export LC_ALL=en_US.UTF-8
 ##############################################
 
 ##############################################

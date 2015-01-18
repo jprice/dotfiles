@@ -1,1 +1,2 @@
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+sudo mount -o username=admin,password=admin //192.168.1.30/Music /home/jprice/music
