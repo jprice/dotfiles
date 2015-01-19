@@ -194,7 +194,7 @@ alias transfer=transfer
 alias ping='ping -c 5'
 alias fastping='ping -c 100 -s.2'
 alias ports='netstat -tulanp'
-#alias ip="curl icanhazip.com"
+alias myip="curl icanhazip.com"
 alias p4='ping 4.2.2.2 -c 4'
 ##############################################
 

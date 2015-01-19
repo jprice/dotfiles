@@ -3,6 +3,7 @@
 #
 # Ignore these files globally in this repo.
 #
+*.log
 *.bak
 *.swp
 *.bak
