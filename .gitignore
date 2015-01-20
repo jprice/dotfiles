@@ -19,6 +19,7 @@
 *.app
 *.lib
 *.a
+*.data
 .virthualenv
 *~
 *.d/localhost
@@ -56,7 +57,7 @@ vim/*~
 vim/.netrwhist
 vim/beautify.settings
 vim/bundle/*
-
+irssi/away.log
 conky/secrets.yml
 conky/info.conkyrc
 conky/sys.conkyrc

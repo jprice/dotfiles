@@ -77,4 +77,5 @@ PATH=$PATH:/usr/lib/ruby/gems/2.2.0
 #PATH=$PATH:/home/jprice/.gem/ruby/2.2.0/bin:$PATH
 PATH=$PATH:~/.node_modules/bin
 export npm_config_prefix=~/.node_modules
+PATH="/usr/local/heroku/bin:$PATH"
 ##############################################

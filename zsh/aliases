@@ -9,21 +9,21 @@
 
 ##############################################
 # apt stuff 
-if [ $UID -ne 0 ]; then
-alias update="sudo apt-get  update"
-alias upgrade="sudo apt-get upgrade -y"
-alias install="sudo apt-get install"
-alias remove="sudo apt-get remove"
-alias search="apt-cache search"
-alias apt-get="sudo apt-get"
-fi
+#if [ $UID -ne 0 ]; then
+#alias update="sudo apt-get  update"
+#alias upgrade="sudo apt-get upgrade -y"
+#alias install="sudo apt-get install"
+#alias remove="sudo apt-get remove"
+#alias search="apt-cache search"
+#alias apt-get="sudo apt-get"
+#fi
 ##############################################
 
 ##############################################
 # pacman
 if [ $UID -ne 0 ]; then
 alias pacman="sudo pacman"
-#alias yaourt="sudo yaourt"
+#alias yaourt="sudo yaourt" # shouldn't run as root
 fi
 ##############################################
 

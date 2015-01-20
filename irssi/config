@@ -276,8 +276,17 @@ formats = {
 settings = {
   core = { real_name = "xero"; user_name = "xero"; nick = "xero"; };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = {
-     theme = "nixers.theme";
-     bell_beeps = "no";
+  "fe-common/core" = { theme = "nixers.theme"; bell_beeps = "no"; };
+};
+statusbar = {
+  default = {
+    awl_0 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_0 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
   };
 };
+logs = { };
