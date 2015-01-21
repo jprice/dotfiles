@@ -63,9 +63,9 @@ conky/info.conkyrc
 conky/sys.conkyrc
 conky/network.conkyrc
 conky/weather.conkyrc
-
+fonts/
 zsh/custom/private/*
-
+zsh/oh-my-zsh
 
 #Sorry I had to pay for them and so do you
 fonts/Pragmatat*
