@@ -78,8 +78,11 @@ transfer() {
 	fi; 
 	cat $tmpfile; 
 	rm -f $tmpfile; }; 
-##############################################
+	
+# Git Ignore maker
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+##############################################
+
 
 
 ##############################################
@@ -91,4 +94,10 @@ PATH=$PATH:/usr/lib/ruby/gems/2.2.0
 PATH=$PATH:~/.node_modules/bin
 export npm_config_prefix=~/.node_modules
 PATH="/usr/local/heroku/bin:$PATH"
+export GOPATH=~/go
+export PATH=$PATH:~/go/bin
+export PATH=$PATH:~/.composer/vendor/bin
+#source '$HOME/google-cloud-sdk/path.zsh.inc'
+#source '$HOME/google-cloud-sdk/completion.zsh.inc'
 ##############################################
+
