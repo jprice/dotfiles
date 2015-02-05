@@ -113,8 +113,8 @@ alias httpdtest='sudo /usr/sbin/apachectl -t && /usr/sbin/apachectl -t -D DUMP_V
 
 ##############################################
 # Other programming 
-alias pip install='sudo pip install'
-alias gem install='sudo gem install'
+#alias pip install='sudo pip install'
+#alias gem install='sudo gem install'
 ##############################################
 
 ##############################################
