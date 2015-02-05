@@ -9,6 +9,7 @@
 
 ##############################################
 # apt stuff 
+# leaving here for my debian based servers
 #if [ $UID -ne 0 ]; then
 #alias update="sudo apt-get  update"
 #alias upgrade="sudo apt-get upgrade -y"
@@ -29,6 +30,7 @@ fi
 
 ##############################################
 #ansible
+# no longer needed as I have ansible installed correctly now.
 #alias ansible="sudo ansible"
 #alias ansible-playbook="sudo ansible-playbook"
 #alias ansible-galaxy="sudo ansible-galaxy"
