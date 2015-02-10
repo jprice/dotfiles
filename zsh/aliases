@@ -6,12 +6,12 @@
 # customize my own, but I'm not you.
 #
 ##############################################
-
+export EDITOR=vi
 ##############################################
 # apt stuff 
 # leaving here for my debian based servers
 #if [ $UID -ne 0 ]; then
-#alias update="sudo apt-get  update"
+#alias update="sudo apt-get update"
 #alias upgrade="sudo apt-get upgrade -y"
 #alias install="sudo apt-get install"
 #alias remove="sudo apt-get remove"
@@ -145,18 +145,18 @@ extract() {
 # edit various confs
 conf() {
     case $1 in
-    zshrc)     vim ~/.zshrc ;;
-    xinit)     vim ~/.xinitrc ;;
-    xres)      vim ~/.Xresources && xrdb ~/.Xresources ;;
-    sxhkd)     vim ~/.config/sxhkd/sxhkdrc ;;
-    ncmpcpp)   vim ~/.ncmpcpp/config ;;
-    ranger)    vim ~/.config/ranger/rc.conf ;;
-    tmux)      vim ~/.tmux.conf ;;
-    vimrc)     vim ~/.vimrc ;;
-    ranger)     vim ~/.config/ranger/rc.conf ;;
-    php)	   sudo vim /etc/php5/apache2/php.ini ;;
-    apache)	   suco vim /etc/apache2/apache2.conf ;;
-    mpd)        vim ~/.mpdconf ;;
+    zshrc)     $EDITOR ~/.zshrc ;;
+    xinit)     $EDITOR ~/.xinitrc ;;
+    xres)      $EDITOR ~/.Xresources && xrdb ~/.Xresources ;;
+    sxhkd)     $EDITOR ~/.config/sxhkd/sxhkdrc ;;
+    ncmpcpp)   $EDITOR ~/.ncmpcpp/config ;;
+    ranger)    $EDITOR ~/.config/ranger/rc.conf ;;
+    tmux)      $EDITOR ~/.tmux.conf ;;
+    vimrc)     $EDITOR ~/.vimrc ;;
+    ranger)     $EDITOR ~/.config/ranger/rc.conf ;;
+    php)	   sudo $EDITOR /etc/php5/apache2/php.ini ;;
+    apache)	   sudo $EDITOR /etc/apache2/apache2.conf ;;
+    mpd)        $EDITOR ~/.mpdconf ;;
         *)			echo "Unknown application: $1" ;;
     esac
 }
