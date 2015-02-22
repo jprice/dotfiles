@@ -31,6 +31,7 @@ cmus/*.pl
 ssh/*
 subversion/README.txt
 subversion/auth/*
+gnupg/
 gnupg/secring.gpg
 gnupg/pubring.gpg
 gnupg/trustdb.gpg
