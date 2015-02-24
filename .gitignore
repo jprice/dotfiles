@@ -24,7 +24,7 @@
 *~
 *.d/localhost
 aptitude/cache
-bin/sub*
+bin/sublime
 cmus/autosave
 cmus/cache
 cmus/*-history
