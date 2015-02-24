@@ -24,6 +24,7 @@
 *~
 *.d/localhost
 aptitude/cache
+bin/sub*
 cmus/autosave
 cmus/cache
 cmus/*-history
