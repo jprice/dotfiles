@@ -11,33 +11,23 @@ export EDITOR=vi
 ##############################################
 # apt stuff 
 # leaving here for my debian based servers
-#if [ $UID -ne 0 ]; then
-#alias update="sudo apt-get update"
-#alias upgrade="sudo apt-get upgrade -y"
-#alias install="sudo apt-get install"
-#alias remove="sudo apt-get remove"
-#alias search="apt-cache search"
-#alias apt-get="sudo apt-get"
-#fi
-##############################################
-
-##############################################
-# pacman
 if [ $UID -ne 0 ]; then
-alias pacman="sudo pacman"
-#alias yaourt="sudo yaourt" # shouldn't run as root
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade -y"
+alias install="sudo apt-get install"
+alias remove="sudo apt-get remove"
+alias search="apt-cache search"
+alias apt-get="sudo apt-get"
 fi
 ##############################################
 
 ##############################################
-#ansible
-# no longer needed as I have ansible installed correctly now.
-#alias ansible="sudo ansible"
-#alias ansible-playbook="sudo ansible-playbook"
-#alias ansible-galaxy="sudo ansible-galaxy"
-#alias ansible-vault="sudo ansible-vault"
+# pacman
+#if [ $UID -ne 0 ]; then
+#alias pacman="sudo pacman"
+#alias yaourt="sudo yaourt" # shouldn't run as root
+#fi
 ##############################################
-
 ##############################################
 # Shortcuts
 #alias rm='rm -i'
@@ -102,21 +92,11 @@ up(){
 alias arestart="sudo /etc/init.d/apache2 restart"
 alias astart="sudo /etc/init.d/apache2 start"
 alias astop="sudo /etc/init.d/apache2 stop"
-# PHP stuff
 #alias composer="composer.phar"
-alias nginxreload='sudo /usr/local/nginx/sbin/nginx -s reload'
-alias nginxtest='sudo /usr/local/nginx/sbin/nginx -t'
-alias lightyload='sudo /etc/init.d/lighttpd reload'
-alias lightytest='sudo /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf -t'
 alias httpdreload='sudo /usr/sbin/apachectl -k graceful'
 alias httpdtest='sudo /usr/sbin/apachectl -t && /usr/sbin/apachectl -t -D DUMP_VHOSTS'
 ##############################################
 
-##############################################
-# Other programming 
-#alias pip install='sudo pip install'
-#alias gem install='sudo gem install'
-##############################################
 
 ##############################################
 # Try to extract everything
