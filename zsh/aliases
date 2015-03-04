@@ -28,6 +28,7 @@ fi
 #alias yaourt="sudo yaourt" # shouldn't run as root
 #fi
 ##############################################
+
 ##############################################
 # Shortcuts
 #alias rm='rm -i'
