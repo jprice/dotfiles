@@ -42,6 +42,8 @@ gnupg/random*
 gnupg/private*
 gnupg/*~
 mercurial/certs/
+mpd/mpd.conf
+mpd/mpd.db
 mutt/muttrc
 mutt/cache/*
 mutt/mailboxes.*

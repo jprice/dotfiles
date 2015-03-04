@@ -19,7 +19,7 @@ ZSH_THEME="jprice"
 DISABLE_AUTO_UPDATE="true"
 HIST_STAMPS="mm/dd/yyyy"
 plugins=(git sublime docker gem git-extras laravel laravel4 python pyenv php pip rsync tmux virtualenv adb django alias-tips)
-export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/pycharm/bin:$HOME/bin/sysadmin-util
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/pycharm/bin:$HOME/bin/sysadmin-util:$HOME/Projects/ansible/bin
 source $ZSH/oh-my-zsh.sh
 ##############################################
 
@@ -56,7 +56,7 @@ if [[ -n $SSH_CONNECTION ]]; then
 ##############################################
 # Load custon sources
 source ~/.dotfiles/zsh/aliases
-source virtualenvwrapper.sh
+#source virtualenvwrapper.sh
 ##############################################
 
 ##############################################
