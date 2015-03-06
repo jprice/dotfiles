@@ -76,6 +76,7 @@ alias foldersize="find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -r
 alias pkill="sudo pkill"
 alias bfg="~/bin/bfg.jar"
 alias mntmusic="sudo mount -t cifs //192.168.1.30/music ~/music -o user=admin"
+alias vpn="sudo openvpn --config ~/.vpn/vpn.ovpn"
 ##############################################
 
 

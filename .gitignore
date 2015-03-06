@@ -67,6 +67,7 @@ conky/info.conkyrc
 conky/sys.conkyrc
 conky/network.conkyrc
 conky/weather.conkyrc
+vpn/*
 zsh/custom/private/*
 zsh/oh-my-zsh
 
