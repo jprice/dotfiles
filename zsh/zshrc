@@ -81,6 +81,6 @@ export NVM_DIR="/home/outlaw/.nvm"
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 
-source /home/outlaw/.rvm/scripts/rvm
+export VULTR_API_KEY=CGqkLVPGmKVIKd2DYpzOL
+source /usr/local/rvm/scripts/rvm
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

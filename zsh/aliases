@@ -90,9 +90,10 @@ up(){
 ##############################################
 # LAMP
 # Apache
-alias arestart="sudo /etc/init.d/apache2 restart"
-alias astart="sudo /etc/init.d/apache2 start"
-alias astop="sudo /etc/init.d/apache2 stop"
+alias areload="sudo service apache2 reload"
+alias arestart="sudo service apache2 restart"
+alias astart="sudo service apache2 start"
+alias astop="sudo service apache2 stop"
 #alias composer="composer.phar"
 alias httpdreload='sudo /usr/sbin/apachectl -k graceful'
 alias httpdtest='sudo /usr/sbin/apachectl -t && /usr/sbin/apachectl -t -D DUMP_VHOSTS'
