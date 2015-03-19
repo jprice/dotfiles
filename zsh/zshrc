@@ -119,3 +119,4 @@ export ANC_PRIVATE_KEY=/home/outlaw/bin/anc-private.key
 #source '$HOME/google-cloud-sdk/completion.zsh.inc'
 ##############################################
 
+PATH=$HOME/plowshare/bin:$PATH
