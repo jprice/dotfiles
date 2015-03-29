@@ -1,4 +1,3 @@
-#alias python="python2"
 ############################################## 
 #
 # My custom aliases to save me some 
@@ -77,6 +76,11 @@ alias pkill="sudo pkill"
 alias bfg="~/bin/bfg.jar"
 alias mntmusic="sudo mount -t cifs //192.168.1.30/music ~/music -o user=admin"
 alias vpn="sudo openvpn --config ~/.vpn/vpn.ovpn"
+alias shred="shred -f -n 10 -z -u"
+alias sushred="sudo shred -f -n 10 -z -u"
+alias shred30="shred -f -n 30 -z -u"
+alias sushred30="sudo shred -f -n 30 -z -u"
+
 ##############################################
 
 
