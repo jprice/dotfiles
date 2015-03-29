@@ -24,6 +24,7 @@
 *~
 *.d/localhost
 aptitude/cache
+aws/*
 bin/sublime
 cmus/autosave
 cmus/cache
@@ -68,6 +69,7 @@ conky/sys.conkyrc
 conky/network.conkyrc
 conky/weather.conkyrc
 vpn/*
+zsh/aws
 zsh/custom/private/*
 zsh/oh-my-zsh
 
