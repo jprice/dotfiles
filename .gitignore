@@ -14,6 +14,7 @@
 *.gpg
 *.key
 *.cert
+*.pem
 *.exe
 *.out
 *.app
