@@ -71,6 +71,7 @@ conky/network.conkyrc
 conky/weather.conkyrc
 vpn/*
 zsh/aws
+zsh/secrets
 zsh/custom/private/*
 zsh/oh-my-zsh
 
