@@ -58,7 +58,7 @@ if [[ -n $SSH_CONNECTION ]]; then
 # Load custon sources
 source ~/.dotfiles/zsh/aliases
 #source virtualenvwrapper.sh
-source ~/.dotfiles/zsh/aws
+#source ~/.dotfiles/zsh/aws
 ##############################################
 
 ##############################################
