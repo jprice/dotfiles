@@ -80,7 +80,7 @@ alias shred="shred -f -n 10 -z -u"
 alias sushred="sudo shred -f -n 10 -z -u"
 alias shred30="shred -f -n 30 -z -u"
 alias sushred30="sudo shred -f -n 30 -z -u"
-
+alias fuck='$(thefuck $(fc -ln -1))'
 ##############################################
 
 

@@ -9,9 +9,9 @@
 
 # Global Config
 [user]
-    #name = "**Your Name**"
-    #email = "**Your Email**"
-    #signingkey = **Your GPG ID**
+    name = "jprice"
+    email = "josh@outlawit.com"
+    signingkey = 82894F3E78E04C5B
 
 [branch "master"]
     remote = origin
@@ -149,3 +149,5 @@
 [user]
 	name = Josh Price
 	email = josh@outlawit.com
+[review "gerrit.paranoidandroid.co"]
+	username = jprice
