@@ -16,3 +16,6 @@
 [submodule "fonts/powerline"]
 	path = fonts/powerline
 	url = git@github.com:powerline/fonts.git
+[submodule "fonts/Office-Code-Pro"]
+	path = fonts/Office-Code-Pro
+	url = git@github.com:nathco/Office-Code-Pro.git
