@@ -147,7 +147,10 @@
     insteadof = github:
 
 [user]
-	name = Josh Price
+	name = jprice
 	email = josh@outlawit.com
 [review "gerrit.paranoidandroid.co"]
 	username = jprice
+
+[github]
+	user = jprice
