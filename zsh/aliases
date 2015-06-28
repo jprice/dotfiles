@@ -81,6 +81,23 @@ alias sushred="sudo shred -f -n 10 -z -u"
 alias shred30="shred -f -n 30 -z -u"
 alias sushred30="sudo shred -f -n 30 -z -u"
 alias fuck='$(thefuck $(fc -ln -1))'
+alias dodns='php /home/outlaw/Projects/Digital-Ocean-Dynamic-DNS-Updater/updater.php d8a5bd5ffec6a0384de3d082ed312f07fd7fef273f4b2a31bb536b9ae4c16532 jprice.io home'
+alias myfile="chmod 777 "
+# df
+alias dirsize="du -sh -b ."
+alias filesize="du -s -b  "
+#date
+alias week='date +%V'
+alias day='date +%A'
+alias monthNum='date +%d'
+alias dayNum='date +%e'
+alias month="date +%B"
+
+alias work='cd $WORK'
+alias dev='cd  $DEV'
+alias home='cd ~/'
+alias projects='cd $PROJECTS'
+alias downloads="cd $HOME/Downloads"
 ##############################################
 
 

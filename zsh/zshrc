@@ -83,6 +83,12 @@ transfer() {
 # Git Ignore maker
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
+HOME="/home/outlaw"
+HOME_HDD="/home/outlaw/olddisk$HOME"
+
+DEV="$HOME/dev"
+WORK="$HOME/work"
+PROJECTS="$HOME/Projects"
 ##############################################
 
 
