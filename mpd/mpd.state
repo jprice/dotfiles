@@ -1,9 +1,9 @@
-sw_volume: 84
+sw_volume: 34
 audio_device_state:1:My ALSA Device
 audio_device_state:1:my_fifo
 state: pause
 current: 0
-time: 17.635000
+time: 63.669000
 random: 0
 repeat: 0
 single: 0
@@ -12,17 +12,18 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Metallica/Reload/01 Fuel.mp3
-1:Metallica/Reload/02 The Memory Remains.mp3
-2:Metallica/Reload/03 Devil's Dance.mp3
-3:Metallica/Reload/04 The Unforgiven II.mp3
-4:Metallica/Reload/05 Better Than You.mp3
-5:Metallica/Reload/06 Slither.mp3
-6:Metallica/Reload/07 Carpe Diem Baby.mp3
-7:Metallica/Reload/08 Bad Seed.mp3
-8:Metallica/Reload/09 Where The Wild Things Are.mp3
-9:Metallica/Reload/10 Prince Charming.mp3
-10:Metallica/Reload/11 Low Man's Lyric.mp3
-11:Metallica/Reload/12 Attitude.mp3
-12:Metallica/Reload/13 Fixxxer.mp3
+0:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/01-big_smo-workin_(feat._alexander_king).flac
+1:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/02-big_smo-bumpy_road.flac
+2:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/03-big_smo-hick_ross.flac
+3:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/04-big_smo-anything_goes_(feat._alexander_king).flac
+4:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/05-big_smo-cover_my_eyes_(feat._haden_carpenter).flac
+5:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/06-big_smo-down_in_the_back_woods.flac
+6:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/07-big_smo-come_on_(feat._frankie_ballard).flac
+7:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/08-big_smo-redneck_rich.flac
+8:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/09-big_smo-who_ill_be.flac
+9:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/10-big_smo-got_me.flac
+10:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/11-big_smo-aint_nothin_free.flac
+11:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/12-big_smo-im_so_kuntry.flac
+12:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/13-big_smo-lawdy_lawdy.flac
+13:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/14-big_smo-my_place_(feat._darius_rucker)_(bonus_track).flac
 playlist_end

@@ -73,7 +73,7 @@ vpn/*
 zsh/aws
 zsh/secrets
 zsh/custom/private/*
-zsh/oh-my-zsh
+#zsh/oh-my-zsh
 
 #Sorry I had to pay for them and so do you
 fonts/Pragmata*

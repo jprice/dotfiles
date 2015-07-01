@@ -71,6 +71,7 @@ alias reboot='sudo /sbin/reboot'
 alias shutdown='sudo /sbin/shutdown'
 alias wget='wget -c'
 alias ax="chmod a+x"
+alias pkill="sudo pkill "
 alias foldersize="find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn"
 alias pkill="sudo pkill"
 alias bfg="~/bin/bfg.jar"
@@ -81,6 +82,7 @@ alias sushred="sudo shred -f -n 10 -z -u"
 alias shred30="shred -f -n 30 -z -u"
 alias sushred30="sudo shred -f -n 30 -z -u"
 alias fuck='$(thefuck $(fc -ln -1))'
+alias mpd='mpd ~/.mpd/mpd.conf'
 alias dodns='php /home/outlaw/Projects/Digital-Ocean-Dynamic-DNS-Updater/updater.php d8a5bd5ffec6a0384de3d082ed312f07fd7fef273f4b2a31bb536b9ae4c16532 jprice.io home'
 alias myfile="chmod 777 "
 # df
