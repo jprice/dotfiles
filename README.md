@@ -64,7 +64,7 @@ Contribute
 ------------
 Feel free to fork and send Pull Requests.
 
-License
+[License](http://jprice.mit-license.org/)
 -------
 
 Copyright (c) 2015
