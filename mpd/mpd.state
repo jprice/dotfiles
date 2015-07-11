@@ -2,8 +2,8 @@ sw_volume: 34
 audio_device_state:1:My ALSA Device
 audio_device_state:1:my_fifo
 state: pause
-current: 0
-time: 63.669000
+current: 14
+time: 33.169000
 random: 0
 repeat: 0
 single: 0
@@ -26,4 +26,5 @@ playlist_begin
 11:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/12-big_smo-im_so_kuntry.flac
 12:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/13-big_smo-lawdy_lawdy.flac
 13:Big_Smo-Kuntry_Livin-CD-FLAC-2014-FORSAKEN/14-big_smo-my_place_(feat._darius_rucker)_(bonus_track).flac
+14:Shinedown/Amaryllis/05 Enemies.mp3
 playlist_end

@@ -100,6 +100,7 @@ alias dev='cd  $DEV'
 alias home='cd ~/'
 alias projects='cd $PROJECTS'
 alias downloads="cd $HOME/Downloads"
+alias blog="cd $HOME/Projects/jprice.github.io"
 ##############################################
 
 
