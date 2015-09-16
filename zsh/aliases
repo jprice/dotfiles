@@ -94,6 +94,7 @@ alias day='date +%A'
 alias monthNum='date +%d'
 alias dayNum='date +%e'
 alias month="date +%B"
+alias search='find . -print | grep -i '
 
 alias work='cd $WORK'
 alias dev='cd  $DEV'
