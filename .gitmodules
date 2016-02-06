@@ -19,3 +19,6 @@
 [submodule "fonts/FiraCode"]
 	path = fonts/FiraCode
 	url = git@github.com:tonsky/FiraCode.git
+[submodule "zsh/oh-my-zsh"]
+	path = zsh/oh-my-zsh
+	url = git@github.com:robbyrussell/oh-my-zsh.git
