@@ -67,7 +67,7 @@ Feel free to fork and send Pull Requests.
 [License](http://jprice.mit-license.org/)
 -------
 
-Copyright (c) 2015
+Copyright (c) 2016
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
 "Software"), to deal in the Software without restriction, including
